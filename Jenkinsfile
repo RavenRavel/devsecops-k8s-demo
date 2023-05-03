@@ -29,7 +29,7 @@ pipeline {
           sh 'printenv'
           sh 'docker build -t ravenravel/numeric-app:""$GIT_COMMIT"" .'
           sh 'docker push ravenravel/numeric-app:""$GIT_COMMIT""'
-        }
+          }
       }
     }
   }
